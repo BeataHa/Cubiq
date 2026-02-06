@@ -1,15 +1,15 @@
-# -*- coding: utf-8 -*-  (české znaky)
+# -*- coding: utf-8 -*-  (pro podporu českých znaků)
 """
 Cubiq🧊 – hlavní aplikační modul
 ---------------------------------
 Soubor: main.py
 Autor: Beáta Havelková
-Datum poslední úpravy:  2025-10-19
+Datum poslední úpravy: 2026-02-06
 
 Popis:
     Tento modul obsahuje hlavní třídu `App`, která zajišťuje:
         • Inicializaci Pygame a herního okna
-        • Inicializace pomocných tříd a tříd obrazovek
+        • Inicializaci pomocných tříd a tříd obrazovek
         • Správu obrazovek (Start, Levels, Task)
         • Načítání a ukládání pokroku hráče
         • Řízení hlavního herního cyklu
@@ -199,3 +199,4 @@ class App:
 # ======================================================================
 if __name__ == "__main__":
     App().run()
+
