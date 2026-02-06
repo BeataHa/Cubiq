@@ -3,15 +3,13 @@
 task_screen.py
 --------------
 
-Obrazovka řešení úkolu (Task) ve hře Cubiq🧊.
+Obrazovka řešení úlohy (Task) ve hře Cubiq🧊.
 
-Funkce třídy TaskScreen:
-    • zobrazí 2D pohledy (půdorys, nárys, bokorys) a 3D mřížku,
-    • umožňuje uživateli spojovat body v 3D prostoru,
-    • vykresluje aktuální úlohu, její text a navigační tlačítka (< a >),
-    • kontroluje správnost řešení a vizuálně zvýrazní správná spojení,
-    • zpracovává události myši (klik, mazání spojení, scrollování) a klávesnici (ESC),
-    • spravuje stav úlohy a její načítání.
+Obsahuje třídu TaskScreen, která:
+    • zobrazuje 2D pohledy (půdorys, nárys, bokorys) a 3D mřížku,
+    • umožňuje uživateli spojovat body v prostoru a kontroluje řešení,
+    • vykresluje text úlohy a navigační tlačítka,
+    • zpracovává události myši a klávesnice.
 """
 
 import pygame
@@ -870,3 +868,4 @@ class TaskScreen:
         self.draw_pop_up_draw_window(screen, task)
 
         return resolved
+
