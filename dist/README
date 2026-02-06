@@ -1,1 +1,26 @@
+Interaktivní aplikace pro rozvoj prostorové představivosti
 
+
+Popis
+
+Aplikace je didaktická počítačová hra zaměřená na rozvoj prostorové představivosti prostřednictvím úloh vyžadujících mentální představování a rotování geometrických útvarů.
+
+
+Stažení a spuštění
+
+Tato složka obsahuje všechny soubory potřebné pro spuštění aplikace.
+Stáhněte celou složku dist do počítače.
+Ověřte, že se ve složce nacházejí soubory main.exe, data.json a resolved_tasks.json.
+Spusťte aplikaci dvojklikem na soubor main.exe.
+
+
+Systémové požadavky
+
+Operační systém: Windows
+Minimální rozlišení obrazovky: 1000 × 650 px
+Není nutná instalace Pythonu ani knihovny Pygame
+
+
+Velikost aplikace
+
+Přibližně 18–19 MB.
