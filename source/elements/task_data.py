@@ -3,13 +3,14 @@
 task_data.py
 ------------
 
-Správa dat jednoho úkolu pro Cubiq🧊.
+Správa a rozbalení dat jedné úlohy v aplikaci Cubiq🧊.
 
-Třída TaskData umožňuje:
-    • načítat konkrétní úlohu z JSON souboru,
-    • poskytovat půdorys, nárys, bokorys,
-    • rozbalit řešení z indexů na 3D souřadnice,
-    • vracet text zadání a sub_id úlohy.
+Třída TaskData poskytuje:
+    • načtení úlohy z JSON souboru podle task_id,
+    • 2D reprezentace (půdorys, nárys, bokorys) s Connection2D objekty,
+    • 3D řešení s rozbalením indexů na Grid3DPoint a Connection3D,
+    • přístup k textu úlohy a sub_id (druhá část task_id),
+    • podporu pro různé typy úloh: "2D_to_3D", "3D_to_2D", "tutorial".
 """
 
 import json
@@ -158,3 +159,4 @@ class TaskData:
             int: druhá část task_id za tečkou
         """
         return int(str(self.task_id).split(".")[1])
+
