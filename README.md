@@ -1,5 +1,7 @@
 # Cubiq
-Zdrojový kód a distribuční soubory aplikace Cubiq. 
+Zdrojový kód a distribuční soubory aplikace Cubiq.
+
+Cubiq je interaktivní počítačový program, který má sloužit k rozvoji prostorové představivosti.
 
 Složka source/ obsahuje zdrojový kód aplikace, tedy Python skripty, JSON data a ikonu aplikace.
   Implementace proběhla v programovacím jazyce Python  (verze 3.13) s využitím knihovny Pygame  (verze 2.6), která byla použita pro tvorbu grafického rozhraní aplikace a zpracování uživatelských vstupů.
