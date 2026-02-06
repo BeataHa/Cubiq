@@ -1,3 +1,13 @@
+# -*- coding: utf-8 -*-
+"""
+UI.py
+---------------------
+Pomocné funkce pro aplikaci Cubiq🧊.
+
+Obsahuje nástroje pro:
+    • detekci jednokliku a dvojkliku myší v Pygame
+"""
+
 import pygame
 
 
@@ -26,3 +36,4 @@ class MouseClickHandler:
                 self.last_click_time = current_time
                 return 'single'
         return None
+
