@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 """
 data_creating_fun.py
-----------
+-------------------
 Pomocné funkce pro aplikaci Cubiq🧊.
 
 Obsahuje nástroje pro:
-    • vytvoření nového tásku do jsonu
+    • vytvoření, úpravu a mazání úloh v JSON souborech
 """
 
 import json
@@ -115,3 +115,4 @@ def delete_from_json(task_id, filepath="data.json"):
     # Ulož zpět
     with open(writable_path(filepath), "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=4)
+
