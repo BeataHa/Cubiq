@@ -1,5 +1,11 @@
 # Cubiq🧊 – Zdrojové kódy
 
+Zdrojový kód aplikace Cubiq🧊, obsahuje Python skripty, JSON data a ikonu aplikace.
+
+**Technologie:**
+- Python 3.13
+- Pygame 2.6 (grafické rozhraní a zpracování uživatelských vstupů)
+
 ## Struktura složky `source/`
 
 - **elements/** – objekty, které se používají napříč aplikací: tlačítka, popup okna, body mřížky, spojení, vstupní pole a správu úrovní.
