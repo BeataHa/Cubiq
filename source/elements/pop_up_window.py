@@ -2,7 +2,16 @@
 """
 pop_up_window.py
 ----------------
-Třída pro vyskakovací okno s textem pro Cubiq🧊.
+
+Třída pro interaktivní vyskakovací okno (PopUp) v aplikaci Cubiq🧊.
+
+Obsahuje:
+    • zobrazení textu s automatickým zalomením a paddingem,
+    • dynamické přizpůsobení velikosti okna dle obsahu,
+    • tlačítko OK pro zavření okna,
+    • metody pro nastavení textu a pozice okna,
+    • vykreslování pozadí, okraje, textu a tlačítka,
+    • zpracování kliknutí na tlačítko.
 """
 
 import pygame
@@ -133,3 +142,4 @@ class PopUpWindow:
                 event.type == pygame.MOUSEBUTTONUP and event.button == 1):
             if self.ok_button.click(event):
                 self.hide()
+
