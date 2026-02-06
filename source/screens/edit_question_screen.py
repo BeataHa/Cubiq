@@ -1,15 +1,16 @@
 # -*- coding: utf-8 -*-
 """
-editor_start_page_with_button_class.py
+edit_question_screen.py
 --------------------------------------
+
 Prvotní stránka editoru Cubiq🧊 pro zadání ID příkladu s tlačítkem Button.
 
-Obsahuje:
-    • input box s textem nad ním,
-    • tlačítko Načíst/Vytvořit (pouze aktivní pro validní ID),
-    • detekci Enter a Backspace,
-    • blikající kurzor,
-    • návrat zadaného textu.
+Obsahuje třídu EditQuestionScreen, která:
+    • zobrazuje InputBox pro zadání ID příkladu s textovým popiskem,
+    • umožňuje zadání pouze validního ID (formát x.y a kontrola existujících levelů),
+    • aktivuje tlačítko Načíst/Vytvořit pouze pro validní ID,
+    • detekuje stisky Enter a Escape, Backspace a běžné psaní,
+    • blikající kurzor a návrat zadaného textu uživatelem.
 """
 
 import pygame
@@ -135,3 +136,4 @@ class EditQuestionScreen:
         else:
             self.btn_load.disable()
         self.btn_load.draw(screen)
+
