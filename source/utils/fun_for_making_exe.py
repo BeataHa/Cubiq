@@ -1,3 +1,14 @@
+# -*- coding: utf-8 -*-
+"""
+fun_for_making_exe.py
+---------------------
+Pomocné funkce pro aplikaci Cubiq🧊.
+
+Obsahuje nástroje pro:
+    • získání cest k souborům při běhu v Pythonu i z .exe
+    • určení cesty pro zápis souborů
+"""
+
 import os, sys
 
 def resource_path(relative_path):
@@ -17,4 +28,5 @@ def writable_path(relative_path):
         # Pokud běží v PyCharm / Pythonu
         base_path = os.path.abspath(".")
     return os.path.join(base_path, relative_path)
+
 
