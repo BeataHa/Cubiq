@@ -1,17 +1,19 @@
 # -*- coding: utf-8 -*-
 """
 grid_2d.py
-----------
-Funkce pro vykreslování 2D gridů v aplikaci Cubiq🧊.
+-----------
 
-Obsahuje nástroje pro:
-    • výpočet rozměrů gridu a jeho pozice,
-    • vykreslení 3×3 mřížky s body a čarami,
-    • popisky gridů a úloh (půdorys, nárys, bokorys),
-    • převod indexů bodů na souřadnice,
-    • vykreslení čar dle zadaných dvojic indexů.
-    • podpora pro kreslení v 2D gridu
+Nástroje pro vykreslování 2D gridů v editoru a hře Cubiq🧊.
+
+Obsahuje funkce, které:
+    • počítají velikosti čtverců a pozice gridů na obrazovce,
+    • generují 3×3 body pro půdorys, nárys a bokorys,
+    • vykreslují mřížku s body a spojovacími čarami,
+    • přidávají popisky pod jednotlivé 2D gridy,
+    • vykreslují úsečky podle seznamu Connection2D,
+    • podporují interaktivní 2D grid pro editor úloh.
 """
+
 
 import math
 
@@ -204,3 +206,4 @@ def draw_task(screen: pygame.Surface, position: list[int], square_length: int,
     draw_2d_grid(screen, points, mouse_pos, gridpoints_enabled)
     draw_grid_label(screen, position, square_length, label)
     draw_lines_from_connections(screen, connections, connections_color, connections_width)
+
