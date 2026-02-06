@@ -1,15 +1,16 @@
 # -*- coding: utf-8 -*-
 """
 grid_3d.py
-----------
-Funkce pro práci s 3d mřížkou v aplikaci Cubiq🧊.
+-----------
 
-Soubor obsahuje nástroje pro:
-    • výpočet rozměrů a pozic 3d gridu,
-    • generování bodů 3×3×3 a jejich vykreslení,
-    • práci s uživatelskými spoji (přidávání, mazání, slučování),
-    • matematické operace v prostoru (kolinearita, vzdálenosti),
-    • porovnání uživatelského řešení se správným.
+Nástroje pro práci s 3D mřížkou v editoru a hře Cubiq🧊.
+
+Obsahuje funkce a třídy, které:
+    • počítají rozměry a pozice 3D gridu na obrazovce,
+    • generují body 3×3×3 a vykreslují mřížku s body a spojovacími čarami,
+    • spravují uživatelská spojení (přidávání, mazání, slučování),
+    • provádějí matematické operace v prostoru (kolinearita, vzdálenosti),
+    • porovnávají uživatelské řešení se správným.
 """
 
 import math
@@ -200,3 +201,4 @@ def draw_connections(connections: list["Connection3D"], screen: "pygame.Surface"
                 draw_dashed_line(screen, line_color, (x1, y1), (x2, y2), width=int(line_width//2))
             else:
                 pygame.draw.line(screen, line_color, (x1, y1), (x2, y2), line_width)
+
