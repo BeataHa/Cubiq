@@ -1,9 +1,17 @@
 # -*- coding: utf-8 -*-
 """
 edit_screen.py
----------------------
+---------------
 
-Jednoduchý TaskScreen pro Cubiq🧊 editor.
+Editorová obrazovka úlohy (Edit) pro hru Cubiq🧊.
+
+Obsahuje třídu EditScreen, která:
+    • umožňuje vytvářet a upravovat 2D pohledy (půdorys, nárys, bokorys) a 3D mřížku,
+    • poskytuje tlačítka pro ukládání, mazání, vyčištění a přepínání 2D/3D,
+    • spravuje InputBox pro zadání textu úlohy,
+    • mapuje spojení mezi body na skutečné GridPoint objekty,
+    • zpracovává události myši a klávesnice (levé/pravé tlačítko, ESC, Enter),
+    • vykresluje celé prostředí úlohy s oddělovací čárou, ID úlohy a navigačními prvky.
 """
 
 import sys
@@ -566,3 +574,4 @@ class EditScreen:
 
         self.draw_buttons(screen, task)
         self.draw_clean_button(screen)
+
