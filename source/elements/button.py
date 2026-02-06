@@ -3,17 +3,17 @@
 button.py
 ---------
 
-Třída pro tvorbu a správu tlačítek v aplikaci Cubiq🧊.
+Třída Button pro tvorbu a správu tlačítek v aplikaci Cubiq🧊.
 
-Funkce třídy Button:
-    • vykreslení tlačítka s textem,
-    • změna barvy při najetí myší,
-    • detekce kliknutí myší,
-    • vertikální posun tlačítka (scroll)
-    • změnu barvy tlačítka,
-    • aktivace a deaktivace tlačítka,
-    • vrácení šířky, výšky, dolního y, textu,
-    • přenastavení souřadnic.
+Poskytuje funkce pro:
+    • vykreslení tlačítka s textem a obrysem,
+    • změnu barvy při najetí myší,
+    • detekci kliknutí myší,
+    • vertikální posun tlačítka (scroll),
+    • přenastavení barvy textu a obrysu,
+    • aktivaci a deaktivaci tlačítka,
+    • získání rozměrů a pozice tlačítka,
+    • změnu souřadnic a fontu textu.
 """
 
 import glob_var
@@ -193,4 +193,5 @@ class Button:
         self.rect.y = y
 
     def change_font(self, font):
+
         self.font = font
