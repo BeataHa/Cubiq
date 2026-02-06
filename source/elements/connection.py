@@ -2,8 +2,13 @@
 """
 connections.py
 --------------
+Třídy pro reprezentaci spojení mezi body v mřížkách 2D a 3D v editoru a hře Cubiq🧊.
 
-Třída Connection a její potomci pro spojení v 2D a 3D gridu.
+Obsahuje:
+    • Connection – základní třídu pro spojení dvou bodů,
+    • Connection2D – potomka pro 2D grid (porovnávání dle col,row),
+    • Connection3D – potomka pro 3D grid (porovnávání dle col,row,lay),
+    • metody pro kontrolu, hashování, serializaci do JSON a porovnání spojení.
 """
 
 
@@ -85,3 +90,4 @@ class Connection2D(Connection):
         Vrací jen (col, row), aby porovnání fungovalo nezávisle na x/y.
         """
         return (point.col, point.row)
+
