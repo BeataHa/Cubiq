@@ -2,12 +2,14 @@
 """
 gridpoint.py
 ------------
-
-Třídy pro reprezentaci bodů v mřížce (2D i 3D) v aplikaci Cubiq🧊.
+Třídy pro reprezentaci bodů v mřížkách 2D a 3D v aplikaci Cubiq🧊.
 
 Obsahuje:
-    • obecnou třídu GridPoint – společné chování pro všechny typy gridů,
-    • specializovanou třídu Grid3DPoint pro 3D mřížku.
+    • GridPoint – obecná třída se společným chováním pro všechny typy gridů,
+        zahrnuje výběr myší, kreslení bodu, tvorbu spojení a reset stavu,
+    • Grid2DPoint – specializace pro 2D grid (půdorys, nárys, bokorys),
+    • Grid3DPoint – specializace pro 3D grid (sloupec, řádek, vrstva),
+    • metody pro interaktivní klikání, kreslení a zvýraznění bodů.
 """
 
 import math
@@ -241,3 +243,4 @@ class Grid2DPoint(GridPoint):
         super().__init__(x, y, radius, hover_radius, highlighted_radius, color, hover_color, enabled=True)
         self.col = col
         self.row = row
+
